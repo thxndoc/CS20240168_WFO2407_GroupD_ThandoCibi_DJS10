@@ -6,7 +6,7 @@ function App() {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/psts')
+    fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
         if (!response.ok) {
             console.error(`Error: ${response.status} Not Found`)
