@@ -1,4 +1,6 @@
-## Project Brief: DJS10 - Asynchrony
+# Project Brief: DJS10 - Asynchrony
+## Resources
+[Properties of the Response interface of the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 
 #### Objective
 Dive into the asynchronous world of React by creating an application that fetches and displays blog posts from an API. You'll practice handling API calls with the Fetch API, managing application state, and gracefully handling errors.
