@@ -6,15 +6,19 @@ function App() {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/pots')
+    fetch('https://jsonplaceholder.typicode.com/psts')
         .then(response => {
         if (!response.ok) {
+            console.error(`Error: ${response.status} Not Found`)
             setError('Data fetching failed')
             return [];
         }
         return response.json()
         })
         .then(data => setPosts(data))
+        .catch(error => {
+            console.error('Error:', error)
+        })
     }, [])
 
     // console.log(posts)
